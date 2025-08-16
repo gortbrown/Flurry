@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Windows info-->
+ <meta name="msapplication-TileImage" content="icon.png">
+ <meta name="msapplication-TileColor" content="#ff751a">
+
+<!--iOS info-->
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black">
+ <meta name="apple-mobile-web-app-title content="Nimbus">
+ <link rel="apple-touch-icon" href="icon.png">
+<!--Android info-->
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Home</title>
+ 
+ <link rel="manifest" href="manifest.json">
+ <meta name="theme-color" content="#000000"/>
+</head>
+<body>
+        <header>
+            <h2>Flurry</h2>
+        </header>
+        <img src="icon.png">
+        <p>A web app for running a Tor Snowflake node on mobile.</p>
+        <p>"Fight Censorship, run Snowflake" emblem by Tor Project, available under </p><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+        <br>
+        <br>
+        <a href="index.html">Back</a>
+    </body>
+    <style>
+        #interface{
+            display: block;
+            margin: 0 auto;
+        }
+        header{
+            background-color: blueviolet;
+            color: white;
+            text-align: center;
+            width: 100vw;
+            height: 50px;
+            margin-top: -20px;
+            padding: 15px 0;
+        }
+        html, body{
+            margin: 0;
+            margin-top: 0;
+            text-align: center;
+        }
+        a{
+            color: blueviolet;
+            font-size: 20px;
+
+        }
+    </style>
+<script>
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', ()=> {
+      navigator
+      .serviceWorker
+      .register('service-worker.js')
+      .then(()=>console.log("Ready."))
+      .catch(()=>console.log("MaChInE bRoKe"));
+    });
+}
+</script>
+<style>
+  iframe{
+  margin: 0 auto;
+  }
+  html{
+  background-color: #38383d;
+  }
+</style>
+</body>
+</html>
