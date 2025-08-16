@@ -19,7 +19,27 @@
  <meta name="theme-color" content="#000000"/>
 </head>
 <body>
-<iframe src="https://snowflake.torproject.org/embed.html" width="320" height="540" frameborder="0" scrolling="no"></iframe>
+        <header>
+            <h2>Flurry</h2>
+        </header>
+        <iframe id=interface src="https://snowflake.torproject.org/embed.html" width="320" height="240" frameborder="0" scrolling="no"></iframe>
+    </body>
+    <style>
+        #interface{
+            display: block;
+            margin: 0 auto;
+        }
+        header{
+            background-color: blueviolet;
+            color: white;
+            text-align: center;
+            width: 100vw;
+        }
+        html, body{
+            margin: 0;
+            margin-top: 0;
+        }
+    </style>
 <script>
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', ()=> {
